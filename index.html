@@ -1,52 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <div class="container">
-      <img src="files/logo1.jpeg" alt="Logo">
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+
+  <header class="header">
+    <a class="image">
+      <img src="logo3.png" alt="bee-logo">
+    </a>
+
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#contact">Contact Me</a>
+        <span class="active-nav"></span>
+    </nav>
+
   </header>
 
   <section id="home" class="home-section">
-    <div class="container">
-      <h2>Welcome to My Portfolio</h2>
+    <div class="home-content">
+      <h2>Welcome <span>To </span>My <span>Portfolio</span></h2>
       <video controls>
-        <source src="files/html.mp4" type="video/mp4">
+        <source src="html.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
   </section>
 
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2>Bongisiwe Shabalala</h2>
-      <img src="files/bongi.jpg" alt="Profile Picture">
-      <p>IT graduate with a specialization in software development,
-        possessing a strong foundation in programming and application
-        development. Eager to expand expertise in data analysis and
-        cybersecurity through continuous learning. Demonstrated
-        adaptability, problem-solving skills, and a commitment to staying
-        current with industry trends.
+  <section class="about" id="about">
+    <h2 class="heading">Bongisiwe <span>Shabalala</span></h2>
+
+    <div class="about-img">
+        <img src="bongi.jpg" alt="">
+        <span class="circle-spin"></span>
+       
+    </div>
+
+    <div class="about-content">
+        <h3>Aspiring Software Developer</h3>
+        <p>IT graduate with a specialization in software development,
+            possessing a strong foundation in programming and application
+            development. Eager to expand expertise in data analysis and
+            cybersecurity through continuous learning. Demonstrated
+            adaptability, problem-solving skills, and a commitment to staying
+            current with industry trends.
         </p>
     </div>
   </section>
 
   <section id="contact" class="contact-section">
-    <div class="container">
-      <h2>Contact Me</h2>
+    <div class="contact-content">
+      <h2>Contact <span>Me</span></h2>
       <div class="contact-info">
         <p>166 Gregory Street, Peacehaven, Randfontein, Gauteng</p>
         <div id="map"></div>
@@ -54,9 +68,9 @@
         <p>Email: bongisiweshabalala@outlook.com</p>
 
         <div class="social-media">
-            <a href="https://github.com/beeyourthingscode"> Github</a>
-            <a href="https://www.instagram.com/beeyourthings"> Instagram</a>
-            <a href="https://www.linkedin.com/in/bongisiwe-shabalala-6b2468284/"> Linkedin</a>  
+            <a href="https://github.com/beeyourthingscode"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/beeyourthings"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.linkedin.com/in/bongisiwe-shabalala-6b2468284/"><i class='bx bxl-linkedin'></i></a>  
         </div>
 
       </div>
